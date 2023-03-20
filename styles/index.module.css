@@ -1,0 +1,19 @@
+.title{
+    position: center;
+    height: auto;
+    width: 100%;
+}
+
+.titlescreen{
+    height: 100%;
+    width: 100%;
+}
+
+.raft{
+    image-rendering: pixelated;
+    transition: transform 10s;
+}
+
+.menu:hover{
+    height: 100px;
+}

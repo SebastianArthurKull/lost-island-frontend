@@ -1,0 +1,7 @@
+.navbar {
+    background: #100707;
+    z-index: 1000 !important;
+    height: 100px;
+
+    position: absolute;
+}

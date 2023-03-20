@@ -1,0 +1,332 @@
+
+.gameContainer {
+    image-rendering: pixelated;
+}
+.projectile {
+    width: 16px;
+    height: 16px;
+    z-index: 1000;
+    background-image: url("../../public/images/projectiles/magic.png");
+}
+
+.map {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+
+    background-image: url("../../public/images/maptiles/map.png");
+}
+.water {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-image: url("../../public/images/maptiles/water.jpg");
+    /*background-position-y: 0;*/
+}
+
+.beach {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-image: url("../../public/images/maptiles/beach.jpg");
+}
+
+.grass {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-image: url("../../public/images/maptiles/grass.jpg");
+
+}
+
+.forest {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-image: url("../../public/images/maptiles/forest.jpg");
+
+}
+
+/* Characters */
+.gridCell {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+}
+
+.Character {
+    transition: transform 0.1s;
+    z-index: 1;
+}
+
+
+
+.Character .Character_you_arrow {
+    display: block;
+}
+
+.Character_you_arrow {
+    display: block;
+    position: absolute;
+    width: 70px;
+    height: 50px;
+    background: url("../../public/images/arrow.png") no-repeat no-repeat;
+    transition: transform 0.1s;
+}
+
+.Character_sprite {
+    overflow: hidden;
+}
+
+.Character_Role[role="Archer-Green"] {
+    background: url("../../public/images/character/Archer-Green.png");
+}
+
+.Character_Role[role="Archer-Purple"] {
+    background: url("../../public/images/character/Archer-Purple.png");
+}
+
+.Character_Role[role="Character-Base"] {
+    background: url("../../public/images/character/Character-Base.png");
+}
+
+.Character_Role[role="Mage-Cyan"] {
+    background: url("../../public/images/character/Mage-Cyan.png");
+}
+
+.Character_Role[role="Mage-Red"] {
+    background: url("../../public/images/character/Mage-Red.png");
+}
+
+.Character_Role[role="Soldier-Blue"] {
+    background: url("../../public/images/character/Soldier-Blue.png");
+}
+
+.Character_Role[role="Soldier-Red"] {
+    background: url("../../public/images/character/Soldier-Red.png");
+}
+
+.Character_Role[role="Soldier-Yellow"] {
+    background: url("../../public/images/character/Soldier-Yellow.png");
+}
+
+.Character_Role[role="Warrior-Blue"] {
+    background: url("../../public/images/character/Warrior-Blue.png");
+}
+
+.Character_Role[role="Warrior-Red"] {
+    background: url("../../public/images/character/Warrior-Red.png");
+}
+
+
+.Character_Animation[animation = "idle"] {
+    animation-name: idle;
+    animation-duration: 0.8s;
+    animation-timing-function: steps(2);
+    animation-iteration-count: infinite;
+}
+
+.Character_Animation[animation = "walkAnimation"] {
+    animation-name: walkAnimation;
+    animation-duration: 0.4s;
+    animation-timing-function: steps(2);
+    animation-iteration-count: infinite;
+}
+
+.Character_Animation[animation = "swordAnimation"] {
+    animation-name: swordAttack;
+    animation-duration: 0.8s;
+    animation-timing-function: steps(4);
+    animation-iteration-count: infinite;
+}
+
+.Character_Animation[animation = "bowAnimation"] {
+    animation-name: bowAttack;
+    animation-duration: 0.8s;
+    animation-timing-function: steps(4);
+    animation-iteration-count: 1;
+}
+
+.Character_Animation[animation = "wandAnimation"] {
+    animation-name: wandAttack;
+    animation-duration: 0.8s;
+    animation-timing-function: steps(3);
+    animation-iteration-count: 1;
+}
+
+.Character_Animation[animation = "throwAnimation"] {
+    animation-name: throwAttack;
+    animation-duration: 0.4s;
+    animation-timing-function: steps(3);
+    animation-iteration-count: 1;
+}
+
+.Character_Animation[animation = "damageAnimation"] {
+    animation-name: damage;
+    animation-duration: 0.4s;
+    animation-timing-function: steps(2);
+    animation-iteration-count: 1;
+}
+
+.Character_Animation[animation = "dedAnimation"] {
+    animation-name: ded;
+    animation-duration: 0.4s;
+    animation-timing-function: steps(3);
+    animation-iteration-count: 1;
+}
+
+.Character_Animation[animation = "spinAnimation"] {
+    animation-name: spin;
+    animation-duration: 0.8s;
+    animation-timing-function: steps(8);
+    animation-iteration-count: infinite;
+}
+
+.Chat{
+    animation-name: chatDisaperr;
+    animation-duration: 10000ms;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    transition: all 1s ease-in-out;
+    white-space: initial;
+    word-wrap: break-word;
+}
+
+@keyframes idle {
+    from {
+        background-position-x: -8px;
+    }
+    to {
+        background-position-x: -72px;
+    }
+}
+
+@keyframes walkAnimation {
+    from {
+        background-position-x: -72px;
+    }
+    to {
+        background-position-x: -136px;
+    }
+}
+
+@keyframes swordAttack {
+    from {
+        background-position-x: -136px;
+    }
+    to {
+        background-position-x: -264px;
+    }
+}
+
+@keyframes bowAttack {
+    from {
+        background-position-x: -264px;
+    }
+    to {
+        background-position-x: -392px;
+    }
+}
+
+@keyframes wandAttack {
+    from {
+        background-position-x: -392px;
+    }
+    to {
+        background-position-x: -488px;
+    }
+}
+
+@keyframes throwAttack {
+    from {
+        background-position-x: -488px;
+    }
+    to {
+        background-position-x: -584px;
+    }
+}
+
+@keyframes damage {
+    from {
+        background-position-x: -616px;
+    }
+    to {
+        background-position-x: -680px;
+    }
+}
+
+@keyframes ded {
+    from {
+        background-position-x: -680px;
+    }
+    to {
+        background-position-x: -776px;
+    }
+}
+
+@keyframes spin {
+    from {
+        background-position-y: 0px;
+        background-position-x: -744px;
+    }
+    to {
+        background-position-y: -256px;
+        background-position-x: -744px;
+    }
+}
+
+@keyframes chatDisaperr{
+    0%{
+        opacity: 0;
+        transform: rotateX(90deg);
+    }
+    10%{
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+    90%{
+        opacity: 1;
+        transform: rotateX(0deg);
+    }
+    100%{
+        display: none;
+        opacity: 0;
+        transform: rotateX(90deg);
+    }
+}
+
+.Character[direction="down"].Character_sprite {
+    background-position-y: 0px;
+}
+
+.Character[direction="right"].Character_sprite {
+    background-position-y: -64px;
+}
+
+.Character[direction="up"].Character_sprite {
+    background-position-y: -128px;
+}
+
+.Character[direction="left"].Character_sprite {
+    background-position-y: -192px;
+}
+
+.Character[direction="downleft"].Character_sprite {
+    background-position-y: -224px;
+}
+
+.Character[direction="downright"].Character_sprite {
+    background-position-y: -32px;
+}
+
+.Character[direction="upleft"].Character_sprite {
+    background-position-y: -160px;
+}
+
+.Character[direction="upright"].Character_sprite {
+    background-position-y: -96px;
+}
+
+.Character_shadow {
+    background: url("../../public/images/shadow.png") no-repeat no-repeat;
+}

@@ -1,0 +1,16 @@
+.info{
+    margin: 1em;
+    color: white;
+}
+
+.playerList{
+    background-color: white;
+    color: #100707;
+    border: white;
+    border-radius: 10px;
+}
+.ownPlayer{
+    color: brown;
+    font-weight: bold;
+
+}

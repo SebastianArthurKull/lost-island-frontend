@@ -1,0 +1,23 @@
+.game {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/maptiles/water_up.jpg");
+    margin: 0;
+    padding: 0;
+}
+
+.side {
+    background: #100707;
+    width: 200px;
+    z-index: 1000;
+}
+
+.mainSection {
+    display: flex;
+    height: calc(100vh - 100px - 40px)  ;
+    width: 100vw;
+}
+
