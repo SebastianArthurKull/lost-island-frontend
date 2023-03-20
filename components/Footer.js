@@ -1,6 +1,6 @@
-import ChatForm from "@components/Modals/ChatForm.js"
+import ChatForm from "../components/modals/ChatForm.js"
 import {Container, Nav, Navbar} from "react-bootstrap";
-import styles from "@components/styles/Footer.module.css"
+import styles from "../components/styles/Footer.module.css"
 
 export default function Footer({session, players, handleSubmit, handleChange, onClick, message}) {
     return (<>

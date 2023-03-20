@@ -1,10 +1,10 @@
 import {useEffect} from "react";
-import Game from "@components/Game";
-import CreateMapForm from "@components/Modals/CreateMapForm";
+import Game from "../components/Game";
+import CreateMapForm from "../components/modals/CreateMapForm";
 import {Button} from "react-bootstrap";
 import {useState} from "react";
-import JoinGame from "@components/Modals/JoinGame";
-import {loadAllMaps} from "@lib/api";
+import JoinGame from "../components/modals/JoinGame";
+import {loadAllMaps} from "../lib/api";
 import styles from "../styles/index.module.css"
 
 export default function Home({

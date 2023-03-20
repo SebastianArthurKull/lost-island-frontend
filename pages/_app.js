@@ -1,13 +1,13 @@
 import appStyle from '../styles/_app.module.css'
 import io from "socket.io-client";
-import useSession from "@lib/session";
-import Header from "@components/Header";
-import Footer from "@components/Footer";
+import useSession from "../lib/session";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {updateMessage, updateRole} from "@lib/api";
+import {updateMessage, updateRole} from "../lib/api";
 import {useRef, useState} from "react";
-import LeftBar from "@components/LeftBar";
-import RightBar from "@components/RightBar";
+import LeftBar from "../components/LeftBar";
+import RightBar from "../components/RightBar";
 
 const URL = "localhost:9092"
 

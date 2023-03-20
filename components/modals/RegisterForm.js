@@ -1,7 +1,7 @@
 import {useState} from "react";
 import {Button, Form, Modal} from "react-bootstrap";
-import styles from "@components/styles/LoginForm.module.css";
-import {register} from "@lib/api";
+import styles from "../styles/LoginForm.module.css";
+import {register} from "../../lib/api";
 
 const defaultModel = {"name": "","email": "", "password": ""}
 

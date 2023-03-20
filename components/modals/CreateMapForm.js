@@ -1,7 +1,7 @@
 import {Button, Form, Modal} from "react-bootstrap";
-import styles from "@components/styles/LoginForm.module.css";
+import styles from "../styles/LoginForm.module.css";
 import {useState} from "react";
-import {createMap} from "@lib/api";
+import {createMap} from "../../lib/api";
 
 const defaultModel = {
     name : "Default Name",

@@ -1,8 +1,8 @@
 import style from "./styles/Game.module.css"
 import Player from "./gameobjects/Player";
 import {useEffect, useReducer, useRef, useState} from "react";
-import Map from "@components/gameobjects/Map";
-import Projectile from "@components/gameobjects/Projectile";
+import Map from "../components/gameobjects/Map";
+import Projectile from "../components/gameobjects/Projectile";
 
 const tileSize = 32;
 

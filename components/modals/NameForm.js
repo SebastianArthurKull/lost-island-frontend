@@ -1,6 +1,6 @@
 import {Form} from "react-bootstrap";
 import {useState} from "react";
-import {updateName} from "@lib/api";
+import {updateName} from "../../lib/api";
 
 
 export default function NameForm({session}) {

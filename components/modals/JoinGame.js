@@ -1,5 +1,5 @@
 import {useEffect} from "react";
-import {loadMap} from "@lib/api";
+import {loadMap} from "../../lib/api";
 import {Button, Form, Modal} from "react-bootstrap";
 
 export default function JoinGame({allMaps, session, show, handleClose, setMapFunction}) {

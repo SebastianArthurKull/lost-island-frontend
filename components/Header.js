@@ -1,9 +1,9 @@
-import LoginForm from "@components/Modals/LoginForm";
-import RegisterForm from "@components/Modals/RegisterForm";
+import LoginForm from "../components/modals/LoginForm";
+import RegisterForm from "../components/modals/RegisterForm";
 import {useState} from "react";
 import {Button, Container, Nav, Navbar} from "react-bootstrap";
 import styles from "./styles/Header.module.css"
-import NameForm from "@components/Modals/NameForm";
+import NameForm from "../components/modals/NameForm";
 
 
 export default function Header({session, socket, resetMap, mapIsLoaded}) {
