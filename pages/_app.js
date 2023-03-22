@@ -8,8 +8,9 @@ import {updateMessage, updateRole} from "../lib/api";
 import {useRef, useState} from "react";
 import LeftBar from "../components/LeftBar";
 import RightBar from "../components/RightBar";
+import process from "../next.config";
 
-const URL = "localhost:9092"
+const URL = process.env.socketURL + ":9092"
 
 const socket = io(`http://${URL}/socket`, {
     transports: ['polling', 'websocket']
